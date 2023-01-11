@@ -20,6 +20,8 @@ function App() {
     const jsonData = await response.json();
     jsonData && response.ok ? setData(jsonData) : setData({});
   };
+
+
   const handleClick = async () => {
     setIsButton(!isButton);
     await getData();
